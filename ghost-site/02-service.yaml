@@ -3,14 +3,14 @@ kind: Service
 metadata:
   annotations:
   labels:
-    app: drivetester
-    app.kubernetes.io/component: drivetester
-    app.kubernetes.io/instance: drivetester
-    app.kubernetes.io/name: drivetester
-    app.kubernetes.io/part-of: drivetester
+    app: myculinaryblog
+    app.kubernetes.io/component: myculinaryblog
+    app.kubernetes.io/instance: myculinaryblog
+    app.kubernetes.io/name: myculinaryblog
+    app.kubernetes.io/part-of: myculinaryblog
     app.openshift.io/runtime-version: latest
-  name: drivetester
-  namespace: drivetester
+  name: myculinaryblog
+  namespace: myculinaryblog
 spec:
   internalTrafficPolicy: Cluster
   ipFamilies:
@@ -22,8 +22,8 @@ spec:
     protocol: TCP
     targetPort: 2368
   selector:
-    app: drivetester
-    deploymentconfig: drivetester
+    app: myculinaryblog
+    deploymentconfig: myculinaryblog
   sessionAffinity: None
   type: ClusterIP
 status:
