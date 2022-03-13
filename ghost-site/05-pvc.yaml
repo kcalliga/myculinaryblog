@@ -1,8 +1,8 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: drivetester
-  namespace: drivetester
+  name: myculinaryblog
+  namespace: myculinaryblog
   finalizers:
     - kubernetes.io/pvc-protection
 spec:
