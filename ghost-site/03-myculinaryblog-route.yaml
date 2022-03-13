@@ -1,0 +1,21 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: myculinaryblog
+    app.kubernetes.io/component: myculinaryblog
+    app.kubernetes.io/instance: myculinaryblog
+    app.kubernetes.io/name: myculinaryblog
+    app.kubernetes.io/part-of: myculinaryblog
+    app.openshift.io/runtime-version: latest
+  name: myculinaryblog
+  namespace: myculinaryblog
+spec:
+  host: myculinaryblog.com
+  port:
+    targetPort: 2368-tcp
+  to:
+    kind: Service
+    name: myculinaryblog
+    weight: 100
+  wildcardPolicy: None
