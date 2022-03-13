@@ -6,6 +6,6 @@ resources:
   - 00-namespace.yaml
   - 01-deployment.yaml
   - 02-service.yaml
-  - 03-drivetester-route.yaml
-  - 04-www-drivetester-route.yaml
+  - 03-myculinaryblog-route.yaml
+  - 04-www-myculinaryblog-route.yaml
   - 05-pvc.yaml
