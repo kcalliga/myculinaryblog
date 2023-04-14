@@ -46,7 +46,7 @@ spec:
         terminationMessagePolicy: File
         volumeMounts:
         - mountPath: /var/lib/ghost/content
-          name: myculinaryblog-content
+          name: myculinaryblog
       - envFrom:
         - secretRef:
             name: myculinaryblog-db-env
