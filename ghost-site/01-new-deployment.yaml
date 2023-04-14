@@ -35,7 +35,7 @@ spec:
       - envFrom:
         - secretRef:
             name: myculinaryblog-content-env
-        image: docker.io/ghost:5.25
+        image: docker.io/ghost:5.43
         imagePullPolicy: Always
         name: myculinaryblog
         ports:
