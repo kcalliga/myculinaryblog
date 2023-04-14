@@ -61,9 +61,9 @@ spec:
       securityContext: {}
       terminationGracePeriodSeconds: 30
       volumes:
-      - name: myculinaryblog-content
+      - name: myculinaryblog
         persistentVolumeClaim:
-          claimName: myculinaryblog-content
+          claimName: myculinaryblog
       - name: myculinaryblog-db
         persistentVolumeClaim:
           claimName: myculinaryblog-db
