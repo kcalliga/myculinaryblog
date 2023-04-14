@@ -35,7 +35,7 @@ spec:
       - env:
         - name: url
           value: https://myculinaryblog.com
-        image: ghost@sha256:b76e17a04c89d501f391c9f9b83ec645ed9b0423ddf0a9999085f16d88ffc8cd
+        image: ghost:5.8.2
         imagePullPolicy: Always
         name: myculinaryblog
         ports:
